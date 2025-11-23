@@ -127,7 +127,17 @@ public class Agenda {
         double f2 = sc.nextDouble();
         System.out.println("Ingrese nota 3 de Física:");
         double f3 = sc.nextDouble();
-       
+        //---Promedios---
+        double promAlg = (a1+a2+a3)/3;
+        double promIng = (i1+i2+i3)/3;
+        double promFis = (f1+f2+f3)/3;
+        //Mostrar resultados
+        System.out.println("\n--Promedios--");
+        System.out.println("Promedio Algoritmos: " +promAlg);
+        System.out.println("Promedio Ingles: " +promIng);
+        System.out.println("Promedio Fisica: " +promFis);
+
+        volverMenu();
     }
     private static void fecha_nacimiento() {
        Scanner sc = new Scanner (System.in);
